@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messenger", "Messenger\Messenger.csproj", "{9C930336-8847-4973-BDEE-911E8F414589}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSocketsService", "WebSocketsService", "{82FA4F7A-6254-42C9-B66F-D5287E627C1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notification", "Notification", "{EEF55ABC-F5F4-44E6-B629-7789CE2CC20A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSockets", "WebSockets\WebSockets.csproj", "{87033448-D7D3-4641-918B-5B7EFD3E8768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{C24AFEB4-425E-4503-B95C-99D2CEBE757E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C930336-8847-4973-BDEE-911E8F414589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C930336-8847-4973-BDEE-911E8F414589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C930336-8847-4973-BDEE-911E8F414589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C930336-8847-4973-BDEE-911E8F414589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87033448-D7D3-4641-918B-5B7EFD3E8768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87033448-D7D3-4641-918B-5B7EFD3E8768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87033448-D7D3-4641-918B-5B7EFD3E8768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87033448-D7D3-4641-918B-5B7EFD3E8768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24AFEB4-425E-4503-B95C-99D2CEBE757E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24AFEB4-425E-4503-B95C-99D2CEBE757E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24AFEB4-425E-4503-B95C-99D2CEBE757E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24AFEB4-425E-4503-B95C-99D2CEBE757E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87033448-D7D3-4641-918B-5B7EFD3E8768} = {82FA4F7A-6254-42C9-B66F-D5287E627C1D}
+		{C24AFEB4-425E-4503-B95C-99D2CEBE757E} = {EEF55ABC-F5F4-44E6-B629-7789CE2CC20A}
+	EndGlobalSection
+EndGlobal
