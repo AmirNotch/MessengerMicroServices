@@ -1,9 +1,28 @@
+using NotificationService.Background;
+using NotificationService.Service;
+using NotificationService.Service.IService;
+using StackExchange.Redis;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services
+    .AddHostedService<NotificationJob>()
+    .AddSwaggerGen()
+    .AddHttpClient<IChatServiceClient, ChatServiceClient>(client =>
+    {
+        client.BaseAddress = new Uri("http://localhost:8080/api/public");
+    });
+
+builder.Services
+        .AddSingleton<IRedisService, RedisService>()
+        .AddSingleton<IConnectionMultiplexer>(sp =>
+        {
+            var configuration = "localhost:6379"; // или из конфигурации
+            return ConnectionMultiplexer.Connect(configuration);
+        });
 
 var app = builder.Build();
 
