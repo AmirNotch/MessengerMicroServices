@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Messenger.Controllers;
 
+[ApiController]
+[Route("api/public")]
 public class GroupChatController : BaseController
 {
     private readonly GroupChatsService _groupChatsService;

@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Messenger.Controllers;
 
+[ApiController]
+[Route("api/public")]
 public class DirectChatController : BaseController
 {
     private readonly DirectChatsService _directChatsService;
